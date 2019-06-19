@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A1 Bank Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
+    <!-- <link href="signin.css" rel="stylesheet"> -->
+    <style>
+            body {
+                margin: auto;
+                width: 50%;
+                padding: 100px;
+                text-align: center;
+                background-color: dimgray;
+            }
+            h1{
+                color:honeydew;
+            }
+            input{
+                text-align: center;
+                width: 20%;
+            }
+
+    </style>
+</head>
+<body>
+    <!-- Make an onsubmit back to home &
+         alert the customer that they are to wait for approval -->
+    <form class="form-signin" method="POST" onsubmit="login()">
+        <h1 class="h3 mb-3 font-weight-normal">Please Input your information</h1>
+        <!-- user_name, first_name, last_name, email, password, 
+            address, dob, social, phone_no, isemployee, isadmin -->
+        <label for="inputPassword" class="sr-only">User Name</label>
+        <input type="text" id="userName" name="password" class="form-control" placeholder="User Name" required autofocus>
+     
+        <label for="inputPassword" class="sr-only">First Name</label>
+        <input type="text" id="firstName" name="password" class="form-control" placeholder="First Name" required>
+        
+        <label for="inputPassword" class="sr-only">Last Name</label>
+        <input type="text" id="lastName" name="password" class="form-control" placeholder="Last Name" required>
+     
+        <label  for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="email" name="name" class="form-control" placeholder="Email address" required >
+
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+
+        <label for="inputPassword" class="sr-only">Address</label>
+        <input type="text" id="password" name="password" class="form-control" placeholder="# St, City, State ZIP" required>
+        
+        <label for="inputPassword" class="sr-only">Date Of Birth</label>
+        <input type="date" id="password" name="password" class="form-control" placeholder="DD-MM-YYYY" required>
+        
+        <label for="inputPassword" class="sr-only">Social</label>
+        <input type="int" id="password" name="password" class="form-control" placeholder="123456789" required>
+        
+        <label for="inputPassword" class="sr-only">Phone Number</label>
+        <input type="int" id="password" name="password" class="form-control" placeholder="9561234567" required>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+    </form>
+    <br/>
+    <form action="login.html">
+        <button type="submit" value="Go Login" class="btn btn-lg btn-primary btn-block">Go to Login</button>
+    </form>
+    <br/>
+    <form action="home.html">
+        <button type="submit" value="Go Register" class="btn btn-lg btn-primary btn-block">Want to go Home?</button>
+    </form>
+    <script src="loginlogic.js"></script>
+</body>
+</html>
